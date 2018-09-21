@@ -6,3 +6,7 @@ savings = 100
 result = 100 * 1.10 ** 7
 print("I started with $" + str(savings) + " and now have $" + str(result) + ". Awesome!")
 
+python3 get-pip.py 
+pip3 install numpy
+import numpy as np 
+from numpy import array 
