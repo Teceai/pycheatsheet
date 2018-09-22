@@ -1,12 +1,37 @@
 type(var)
+
+# Without packages this stuff works this way (with numbers that will work the same way, without numpy for ex.)
 In: 'ab' + 'cd'
 Out: 'abcd'
 
+# That's how you mix string with integers or floats
 savings = 100
 result = 100 * 1.10 ** 7
 print("I started with $" + str(savings) + " and now have $" + str(result) + ". Awesome!")
 
+# string methods
+.upper()
+.count()
+
+# list methods
+.index()
+.count()
+.append()
+.reverse()
+.remove()
+
+# Install package and import it for work
 python3 get-pip.py 
 pip3 install numpy
-import numpy as np 
-from numpy import array 
+import numpy as np
+from numpy import array
+
+# numpy package
+import numpy as np
+np.array() 
+np.array(array[array with some condition])
+
+#attribute of np.array
+.shape()
+
+
