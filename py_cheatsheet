@@ -30,8 +30,37 @@ from numpy import array
 import numpy as np
 np.array() 
 np.array(array[array with some condition])
+np.corrcoef()
 
 #attribute of np.array
 .shape()
+
+### PLOTS ###
+
+import matplotlib.pyplot as plt
+plt.plot(x,y)
+plt.scatter(x,y)
+plt.hist(x, bins=n)
+plt.show()
+#cleans it up again so you can start afresh
+plt.clf()
+# Put the x-axis on a logarithmic scale
+plt.xscale('log')
+
+# customize plot
+# Basic scatter plot, log scale
+plt.scatter(x = gdp_cap, y = life_exp, s = np.array(pop) * 2, c = col, alpha = 0.8)
+plt.xscale('log') 
+# Strings
+plt.xlabel('GDP per Capita [in USD]')
+plt.ylabel('Life Expectancy [in years]')
+plt.title('World Development in 2007')
+plt.xticks([1000, 10000, 100000],['1k', '10k', '100k'])
+plt.text(1550, 71, 'India')
+plt.grid(True)
+# After customizing, display the plot
+plt.show()
+
+### DICTIONARIES ###
 
 
