@@ -9,6 +9,9 @@ savings = 100
 result = 100 * 1.10 ** 7
 print("I started with $" + str(savings) + " and now have $" + str(result) + ". Awesome!")
 
+### FUNCTIONS ###
+enumerate()
+
 # string methods
 .upper()
 .count()
@@ -31,6 +34,9 @@ import numpy as np
 np.array() 
 np.array(array[array with some condition])
 np.corrcoef()
+np.logical_and()
+np.logical_or()
+np.logical_not()
 
 #attribute of np.array
 .shape()
@@ -63,4 +69,54 @@ plt.show()
 
 ### DICTIONARIES ###
 
+world = {"afghanistan" :30.55, "albania":2.77, "algeria":39.21}
+"sealand" in world
+.keys()
+# to add smth into dict
+world['italy'] = 33.33
+# Dictionariception
+europe = { 'spain': { 'capital':'madrid', 'population':46.77 },
+           'france': { 'capital':'paris', 'population':66.03 },
+           'germany': { 'capital':'berlin', 'population':80.62 },
+           'norway': { 'capital':'oslo', 'population':5.084 } }
 
+### PANDAS ###
+import pandas as pd
+pd.DataFrame(dictionary)
+.index()
+pd.read_csv("path/to/brics.csv", index_col = 0)
+
+# loc and iloc
+# Row access brics.loc[["RU", "IN", "CH"]]
+# Column access brics.loc[:, ["country", "capital"]]
+# Row & Column access brics.loc[["RU", "IN", "CH"], ["country", "capital"]]
+# Same but with numpers .iloc[[]]
+
+### IF ###
+if condition :
+ expression
+elif condition :
+ expression
+else :
+ expression
+ 
+ ### WHILE ###
+ while condition : 
+  expression
+  
+### FOR ###
+for var in seq : 
+  expression
+  
+#functions
+enumerate(seq)
+# dictionary:
+ dictionary.items()
+# numpy array:
+ np.nditer(array)
+
+brics[brics["area"] > 8] 
+brics[np.logical_and(brics["area"] > 8, brics["area"] < 10)] 
+
+# for dataframes
+for lab, row in datafr.iterrows()
